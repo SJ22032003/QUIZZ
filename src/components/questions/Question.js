@@ -25,13 +25,6 @@ const updateform = () => {
 
     if(!qData[currentquestion]){
         jumbo.innerHTML = "";      
-        // let result = document.createElement('button');
-        // result.setAttribute("type", "button");
-        // result.innerHTML = "submit";
-        // result.classList.add("btn-success");
-        // result.classList.add("btn");
-        // jumbo.style.display = "flex"
-        // jumbo.style.flexDirection = "column";
         let resbtnDiv = document.createElement('div');
         resbtnDiv.innerHTML = "Thankyou"
         resbtnDiv.classList.add('btnDiv');
