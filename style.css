@@ -9,6 +9,7 @@
 }
 
 .jumbotron{
+    margin: 10px;
     background: linear-gradient(180deg, rgb(231, 231, 231) , rgba(253, 246, 246, 0.425));
     padding: 40px;
     border-radius: 5px;
