@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content:center ;
     align-items: center;
-    background:linear-gradient(135deg, rgb(61, 61, 61) , rgb(187, 186, 186));
+    background:linear-gradient(135deg, rgb(11, 15, 15) , rgba(20, 2, 2, 0.699));
 }
 
 .jumbotron{

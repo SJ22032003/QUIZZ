@@ -1,0 +1,46 @@
+#root{ 
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    background:linear-gradient(135deg, rgb(10, 10, 10) , rgba(44, 39, 39, 0.438));
+}
+.jumbotron{
+    margin: 10px;
+    background: linear-gradient(180deg, rgb(231, 231, 231) , rgba(253, 246, 246, 0.425));
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px;
+    width: 60%;
+}
+.display-4{
+    font-size: calc(.2rem + 2.7vw);
+}
+.lead{
+    font-size: 2.4rem;
+}
+.optcontainer{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.optcontainer >input{
+    margin-right: 10px;
+}
+.optform{
+    display: flex;
+    flex-direction: column;
+}
+.btnDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px;
+}
+.labelclass{
+    font-size: 1.5rem;
+}
