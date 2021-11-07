@@ -16,7 +16,9 @@ const qData = {
     answer: 2,
   },
 };
+localStorage.setItem('qData', JSON.stringify(qData));
 
+const answerObj = {}
 let currentAns = null; //flags
 let currentquestion = 0; //flags
 
@@ -100,7 +102,10 @@ submitbtn.classList.add("btn-success");
 submitbtn.classList.add("btn");
 btnDiv.append(submitbtn);
 function moveNext() {
-//   alert(currentAns == qData[currentquestion].answer);
+  // alert(currentAns == qData[currentquestion].answer);
+   
+  answerObj[currentquestion]=currentAns;
+  localStorage.setItem("answerArr", JSON.stringify(answerObj));
   currentquestion += 1;
   updateform();
 }
