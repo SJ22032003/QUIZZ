@@ -1,0 +1,16 @@
+.wrapper{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    background:linear-gradient(135deg, rgb(61, 61, 61) , rgb(187, 186, 186));
+}
+
+.jumbotron{
+    background: linear-gradient(180deg, rgb(231, 231, 231) , rgba(253, 246, 246, 0.425));
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px;
+}
