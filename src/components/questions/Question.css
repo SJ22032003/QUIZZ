@@ -44,3 +44,13 @@
 .labelclass{
     font-size: 1.5rem;
 }
+
+
+
+/* RESPONSIVE ----------*/
+
+@media screen and (max-width:481px) {
+    .jumbotron{
+        width: 90%;
+    }
+}
