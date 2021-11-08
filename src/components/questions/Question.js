@@ -3,12 +3,12 @@ const qData = {
   0: {
     question: "If the value of x is 40, then what is the output of the following program? (x % 10 == 0)? console.log(“Divisible by 10”) : console.log(“Not divisible by 10”);",
     options: [" ReferenceError ", " Divisible by 10", " Not divisible by 10 ", " None of the above"],
-    answer: 3,
+    answer: 1,
   },
   1: {
     question: "If you type the following code in the console window, what result will you get? 3 > 2 > 1 === false",
     options: [" True", " False", " Code will not work", " Error 404"],
-    answer: 0,
+    answer: 1,
   },
   2: {
     question: "JavaScript is a ___ -side programming language.",
