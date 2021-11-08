@@ -15,6 +15,11 @@ const qData = {
     options: ["S", "S", "L", "J"],
     answer: 2,
   },
+  3: {
+    question: "CS_?",
+    options: ["S", "S", "L", "J","K","M"],
+    answer: 2,
+  },
 };
 localStorage.setItem('qData', JSON.stringify(qData));
 
@@ -97,7 +102,7 @@ btnDiv.classList.add('btnDiv');
 let submitbtn = document.createElement("button");
 submitbtn.addEventListener("click", () => moveNext(currentAns));
 submitbtn.setAttribute("type", "button");
-submitbtn.innerHTML = "Submit";
+submitbtn.innerHTML = "Next";
 submitbtn.classList.add("btn-success");
 submitbtn.classList.add("btn");
 btnDiv.append(submitbtn);

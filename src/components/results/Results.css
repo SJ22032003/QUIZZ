@@ -1,0 +1,44 @@
+body{ 
+    width: auto;
+    background:linear-gradient(135deg, rgb(23, 21, 163) , rgba(10, 22, 189, 0.685));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+#mainRoot{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+.jumbotron{
+    background: linear-gradient(180deg, white , rgba(255, 255, 255, 0.788));
+    width: 70%;
+    max-width: 1500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+    margin: 20px;
+}
+#accordion{
+    width: 70% ;
+    max-width: 1500px;
+}
+
+.ansRes{
+    padding: 20px;
+    font-size: 25px;
+}
+.opt{
+    padding: 10px;
+}
+
+#quesRes{
+    background: linear-gradient(180deg, white , rgba(207, 207, 207, 0.788));
+    width: 70%;
+    max-width: 1500px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px;
+}
