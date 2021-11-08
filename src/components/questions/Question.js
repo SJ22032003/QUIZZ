@@ -118,32 +118,13 @@ btnDiv.append(bacBtn);
 
 bacBtn.addEventListener('click',()=>back())
 function back(){
-  let currentquestion = 0;
-  quesH1.innerHTML = `Question ${currentquestion + 1}`;
-  ques.innerHTML = `${qData[currentquestion].question}`;
-  form.innerHTML = "";
-  for (let i in qData[currentquestion].options) {
-    let inp = document.createElement("input");
-    let optcontainer = document.createElement("div");
-    optcontainer.classList.add("optcontainer");
-    inp.setAttribute("type", "radio");
-    inp.setAttribute("id", `opt${i}`);
-    inp.setAttribute("name", "options");
-    inp.setAttribute("value", i);
-
-    inp.addEventListener("click", (e) => {
-      currentAns = e.target.value;
-    });
-
-    let label = document.createElement("label");
-    label.setAttribute("for", `opt${i}`);
-    label.classList.add('labelclass')
-    label.innerHTML = qData[currentquestion].options[i];
-
-    optcontainer.append(inp);
-    optcontainer.append(label);
-    form.append(optcontainer);
+  if(currentquestion==0){
+    return;
   }
+  answerObj[currentquestion]=currentAns;
+  localStorage.setItem("answerArr", JSON.stringify(answerObj));
+  currentquestion -= 1;
+  updateform()
 }
 
 // NEXT------
