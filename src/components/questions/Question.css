@@ -75,6 +75,7 @@
 @media screen and (max-width:481px) {
     .jumbotron{
         width: 90%;
+        margin: 20px;
     }
     .lead{
         font-size: 1.5rem;
