@@ -45,7 +45,6 @@ const updateform = () => {
         resbtn.innerHTML = "Submit";
         resbtn.classList.add("btn-success");
         resbtn.classList.add("btn");
-        resbtn.style.margin= "20px 0px 0px 0px";
         resbtnDiv.append(resbtn);
         jumbo.append(resbtnDiv);
 
@@ -103,14 +102,59 @@ jumbo.append(hr);
 let optDiv = document.createElement("div");
 
 
+
 let btnDiv = document.createElement('div');
 btnDiv.classList.add('btnDiv');
+
+// BACK--------
+
+let bacBtn = document.createElement('button');
+bacBtn.setAttribute("type", "button");
+bacBtn.innerHTML = "Back";
+bacBtn.classList.add("btn-dark");
+bacBtn.classList.add("btn");
+bacBtn.classList.add('quesBtn');
+btnDiv.append(bacBtn);
+
+bacBtn.addEventListener('click',()=>back())
+function back(){
+  let currentquestion = 0;
+  quesH1.innerHTML = `Question ${currentquestion + 1}`;
+  ques.innerHTML = `${qData[currentquestion].question}`;
+  form.innerHTML = "";
+  for (let i in qData[currentquestion].options) {
+    let inp = document.createElement("input");
+    let optcontainer = document.createElement("div");
+    optcontainer.classList.add("optcontainer");
+    inp.setAttribute("type", "radio");
+    inp.setAttribute("id", `opt${i}`);
+    inp.setAttribute("name", "options");
+    inp.setAttribute("value", i);
+
+    inp.addEventListener("click", (e) => {
+      currentAns = e.target.value;
+    });
+
+    let label = document.createElement("label");
+    label.setAttribute("for", `opt${i}`);
+    label.classList.add('labelclass')
+    label.innerHTML = qData[currentquestion].options[i];
+
+    optcontainer.append(inp);
+    optcontainer.append(label);
+    form.append(optcontainer);
+  }
+}
+
+// NEXT------
+
 let submitbtn = document.createElement("button");
 submitbtn.addEventListener("click", () => moveNext(currentAns));
 submitbtn.setAttribute("type", "button");
 submitbtn.innerHTML = "Next";
 submitbtn.classList.add("btn-success");
 submitbtn.classList.add("btn");
+bacBtn.classList.add('quesBtn');
 btnDiv.append(submitbtn);
 function moveNext() {
   // alert(currentAns == qData[currentquestion].answer);

@@ -1,7 +1,7 @@
 const userAns = JSON.parse(localStorage.getItem("answerArr"));
-console.log(userAns);
+// console.log(userAns);
 const questionData = JSON.parse(localStorage.getItem("qData"));
-console.log(questionData);
+// console.log(questionData);
 
 let totalQuestions=Object.keys(questionData).length;
 let score = 0;
@@ -9,11 +9,13 @@ let score = 0;
 for (let i in userAns) {
   if (userAns[i] == questionData[i].answer) {
    // console.log("you gat it son");
-    console.log(questionData[i]);
+    // console.log(questionData[i]);
     score++;
   }
 
 }
+
+
 //console.log('you got ' +score);
 
 const marks = document.getElementById('marks');
@@ -50,6 +52,16 @@ for (let i = 0 ; i< totalQuestions; i++){
     }
    ansRes.append(opAns)
   quesRes.append(ansRes);
+
+
+// BACK TO TOP--------------
+
+let topBtn = document.querySelector('#topBtn').addEventListener('click', ()=>top());
+function top(){
+  scrollTo({ top: document.querySelector('#marks').getBoundingClientRect().top,
+behavior: "smooth"})
+}
+
 
 } 
 

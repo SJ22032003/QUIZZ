@@ -29,7 +29,7 @@ function checkpass() {
 
     setTimeout(()=>{
         root.removeChild(alr);
-    },4000)
+    },2000)
 
   }
 }
