@@ -1,24 +1,29 @@
 const qData = {
   //dynamic data
   0: {
-    question: "full form of JS",
-    options: ["JavaS", "JSava", "Tawa", "JavaScript"],
+    question: "If the value of x is 40, then what is the output of the following program? (x % 10 == 0)? console.log(“Divisible by 10”) : console.log(“Not divisible by 10”);",
+    options: [" ReferenceError ", " Divisible by 10", " Not divisible by 10 ", " None of the above"],
     answer: 3,
   },
   1: {
-    question: "Short form of JavaScript",
-    options: ["PS", "DS", "FT", "JS"],
-    answer: 3,
+    question: "If you type the following code in the console window, what result will you get? 3 > 2 > 1 === false",
+    options: [" True", " False", " Code will not work", " Error 404"],
+    answer: 0,
   },
   2: {
-    question: "HTM_?",
-    options: ["S", "S", "L", "J"],
+    question: "JavaScript is a ___ -side programming language.",
+    options: [" Client", " Server", " Both", " None"],
     answer: 2,
   },
   3: {
-    question: "CS_?",
-    options: ["S", "S", "L", "J","K","M"],
-    answer: 2,
+    question: "Which of the following will write the message “Hello DataFlair!” in an alert box?",
+    options: [" alertBox(“Hello DataFlair!”);", " alert(Hello DataFlair!);", " msgAlert(“Hello DataFlair!”);", " alert(“Hello DataFlair!”); "],
+    answer: 3,
+  },
+  4: {
+    question: "How do you find the minimum of x and y using JavaScript?",
+    options: [" min(x,y);", " Math.min(x,y)", " Math.min(xy)", " min(xy);"],
+    answer: 1,
   },
 };
 localStorage.setItem('qData', JSON.stringify(qData));
@@ -40,6 +45,7 @@ const updateform = () => {
         resbtn.innerHTML = "Submit";
         resbtn.classList.add("btn-success");
         resbtn.classList.add("btn");
+        resbtn.style.margin= "20px 0px 0px 0px";
         resbtnDiv.append(resbtn);
         jumbo.append(resbtnDiv);
 

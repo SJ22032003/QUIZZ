@@ -42,3 +42,36 @@ body{
     margin: 20px;
     box-shadow: 5px 5px 5px;
 }
+
+/* responsive--------- */
+
+@media screen and (max-width:1025px) {
+    .jumbotron{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .jumbotron{
+        width: 90%;
+    }
+    #quesRes{
+        width: 90%;
+    }
+    .ansRes{
+        font-size: 1.1rem;
+    }
+}
+
+
+@media screen and (max-width:481px) {
+    .jumbotron{
+        width: 90%;
+    }
+    #quesRes{
+        width: 90%;
+    }
+    .ansRes{
+        font-size: 1.1rem;
+    }
+}

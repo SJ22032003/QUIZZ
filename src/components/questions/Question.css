@@ -5,11 +5,11 @@
     flex-direction: column;
     justify-content:center ;
     align-items: center;
-    background:linear-gradient(135deg, rgb(10, 10, 10) , rgba(44, 39, 39, 0.438));
+    background:linear-gradient(135deg, rgb(29, 18, 182) ,rgba(18, 64, 163, 0.781));
 }
 .jumbotron{
     margin: 10px;
-    background: linear-gradient(180deg, rgb(231, 231, 231) , rgba(253, 246, 246, 0.425));
+    background: linear-gradient(180deg, rgb(231, 231, 231) , rgba(253, 246, 246, 0.671));
     padding: 40px;
     border-radius: 5px;
     box-shadow: 10px 10px 20px;
@@ -49,8 +49,38 @@
 
 /* RESPONSIVE ----------*/
 
+
+
+
+@media screen and (max-width:1025px) {
+    .jumbotron{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .jumbotron{
+        width: 90%;
+    }
+    .lead{
+        font-size: 1.5rem;
+    }
+    .labelclass{
+        font-size: 1.3rem;
+        margin: 10px;
+    }
+}
+
+
 @media screen and (max-width:481px) {
     .jumbotron{
         width: 90%;
+    }
+    .lead{
+        font-size: 1.5rem;
+    }
+    .labelclass{
+        font-size: 1.3rem;
+        margin: 10px;
     }
 }
