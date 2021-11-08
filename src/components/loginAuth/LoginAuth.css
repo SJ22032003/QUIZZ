@@ -1,0 +1,14 @@
+body{
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(83, 83, 83),rgba(24, 22, 22, 0.705));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+}
+.btnAdmin{
+    margin: 10px;
+}
